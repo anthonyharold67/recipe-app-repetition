@@ -1,5 +1,4 @@
-import React from 'react'
-import NavbarStyle from "./Navbar.style"
+
 
 const Navbar = () => {
   return (
