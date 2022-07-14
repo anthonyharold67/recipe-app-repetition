@@ -6,14 +6,16 @@ import Home from '../pages/home/Home';
 import Login from '../pages/login/Login';
 import PrivateRouter from './PrivateRouter';
 import Detail from '../pages/detail/Detail';
-const AppRouter = () => {
+import Register from '../pages/register/Register';
+const AppRouter = ({user,setUser}) => {
   return (
     <BrowserRouter>
       <GlobalStyles />
-      <Navbar />
+      <Navbar user={user} setUser={setUser} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="login" element={<Login />} />
+        <Route path="login" element={<Login setUser={setUser}/>} />
+        <Route path="register" element={<Register />} />
 
         <Route path="about" element={<PrivateRouter />}>
           <Route path="" element={<About />} />
