@@ -7,7 +7,7 @@ import Cards from '../../components/cards/Cards';
 
 const Home = () => {
   const mealType = ['Breakfast', 'Lunch', 'Dinner', 'Snack','Brunch','TeaTime'];
-  const [query,setQuery] = useState('');
+  const [query,setQuery] = useState('Breakfast');
   const [selectedMeal,setSelectedMeal] = useState("");
   const [recipes,setRecipes] = useState();
 
